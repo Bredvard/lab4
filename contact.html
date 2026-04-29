@@ -1,0 +1,55 @@
+<!doctype html>
+<html lang="uk">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="normalize.css" />
+    <link rel="stylesheet" href="/css/styles.css" />
+    <title>Контакти</title>
+    <style></style>
+  </head>
+  <body>
+    <header>
+      <nav>
+        <a href="index.html">Головна</a>
+        <a href="projects.html">Портфоліо</a>
+        <a href="contact.html">Контакти</a>
+      </nav>
+      <h1>Контакти</h1>
+    </header>
+
+    <div class="container">
+      <div class="contact-wrapper">
+        <div class="contact-text">
+          <h2>Контактна інформація</h2>
+          <p>
+            Якщо у вас є ідеї, пропозиції або ви хочете замовити дизайн —
+            напишіть мені через форму. Я відкритий до співпраці та нових цікавих
+            проєктів.
+          </p>
+          <p>
+            Відповідаю зазвичай протягом 24 годин. Буду радий обговорити ваш
+            проєкт!
+          </p>
+        </div>
+
+        <form
+          onsubmit="
+            alert('Повідомлення надіслано!');
+            return false;
+          "
+        >
+          <h2>Зв'язатися зі мною</h2>
+          <input type="text" placeholder="Ваше ім'я" required />
+          <input type="email" placeholder="Email" required />
+          <textarea rows="5" placeholder="Ваше повідомлення"></textarea>
+          <button type="submit" class="contact-btn">Відправити</button>
+        </form>
+      </div>
+    </div>
+
+    <footer>
+      <p>© 2026 Портфоліо дизайнера</p>
+    </footer>
+  </body>
+</html>

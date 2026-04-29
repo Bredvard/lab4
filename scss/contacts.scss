@@ -1,0 +1,48 @@
+.contact-wrapper {
+  display: flex;
+  gap: 40px;
+  align-items: flex-start;
+  margin-bottom: 340px;
+}
+
+.contact-text {
+  max-width: 400px;
+}
+
+form {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.container {
+  display: flex;
+  justify-content: center;
+}
+
+input,
+textarea {
+  padding: 10px;
+  font-size: 16px;
+}
+
+.contact-btn {
+  padding: 10px;
+  cursor: pointer;
+  align-self: center; /* центрує всередині form */
+  width: 300px;
+}
+@media (max-width: 1024px) {
+  .contact-wrapper {
+    gap: 25px;
+    margin-bottom: 150px;
+  }
+
+  .contact-text {
+    max-width: 320px;
+  }
+}
+form {
+  width: 100%;
+  max-width: 800px;
+}
