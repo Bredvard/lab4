@@ -35,3 +35,22 @@ a {
     color: #f9d100;
   }
 }
+.contact-text,
+form,
+.bio,
+.skills,
+.skill-item,
+.faq-item,
+.contact-cards .card,
+.socials a {
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.18);
+}
+html,
+body {
+  overflow-x: hidden;
+}
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}

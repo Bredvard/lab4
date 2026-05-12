@@ -8,34 +8,65 @@
     <title>Про мене</title>
   </head>
   <body>
-    <header>
-      <nav>
-        <a href="index.html">Головна</a>
-        <a href="projects.html">Портфоліо</a>
-        <a href="contact.html">Контакти</a>
-      </nav>
-      <h1>Про мене</h1>
-    </header>
+    <header class="about-hero">
+  <div class="header-container">
+    <!-- Назва зліва -->
+    <div class="logo">
+      <a href="index.html"></a>
+    </div>
 
-    <div class="container">
-      <section class="intro">
-        <div class="intro-wrapper">
-          <div class="intro-text">
-            <h2>Привіт 👋</h2>
-            Я — людина багатьох творчих ролей: арт-директор, бренд-дизайнер,
-            стиліст і просто той, хто любить створювати. Мені подобається
-            будувати унікальні візуальні світи, натхненні природою та
-            гармонійним хаосом. Я не боюся експериментів і нових викликів.<br />
-            Мій шлях не був прямолінійним: я закінчив міжнародний розвиток,
-            працював у державному секторі та стартапах, перш ніж повністю
-            присвятити себе творчості. <br />Я співпрацюю з компаніями та
-            людьми, які цінують унікальність, сміливість і глибину ідей. Я
-            відкритий до фриланс-проєктів або роботи в інноваційній, креативній
-            та живій команді — де б це не було, головне, щоб було цікаво.
-          </div>
-          <img src="images/human1.jpg" alt="Моє фото" class="intro-img" />
-        </div>
-      </section>
+    <!-- Гамбургер -->
+    <div class="hamburger" id="hamburger">
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+
+    <!-- Меню -->
+    <nav id="nav-menu">
+      <a href="index.html">Головна</a>
+      <a href="projects.html">Портфоліо</a>
+      <a href="contact.html">Контакти</a>
+    </nav>
+  </div>
+
+  <div class="hero-content">
+    <h1>Про мене</h1>
+    <p>UI/UX Designer • Web Designer • Creative Thinker</p>
+  </div>
+</header>
+    <div class="stats">
+      <div class="stat">
+        <h3>15+</h3>
+        <p>Проєктів</p>
+      </div>
+
+      <div class="stat">
+        <h3>3+</h3>
+        <p>Років навчання</p>
+      </div>
+
+      <div class="stat">
+        <h3>100%</h3>
+        <p>Креативності</p>
+      </div>
+    </div>
+    <div class="timeline">
+  <div class="timeline-item">
+    <h3>2024</h3>
+    <p>Початок роботи з UI/UX дизайном</p>
+  </div>
+
+  <div class="timeline-item">
+    <h3>2025</h3>
+    <p>Створення перших web-проєктів</p>
+  </div>
+
+  <div class="timeline-item">
+    <h3>2026</h3>
+    <p>Розробка власного портфоліо</p>
+  </div>
+</div>
 
       <div class="bio">
         <h2>Коротко про мене</h2>
@@ -44,33 +75,78 @@
           створювати чисті інтерфейси та продуману структуру сайтів.
         </p>
       </div>
+      <div class="skills">
+        <h2 class="section-title">Навички</h2>
 
-      <div class="skill">
-        <h2>Навички</h2>
-        <ul>
-          <li>Figma / Adobe XD</li>
-          <li>UI/UX дизайн</li>
-          <li>HTML / CSS</li>
-          <li>Базовий JavaScript</li>
-          <li>Photoshop / Illustrator</li>
-        </ul>
+        <div class="skills-row">
+          <div class="skill-item">
+            <img src="images/Figma.svg" alt="Figma" />
+            <p>Figma</p>
+          </div>
+
+          <div class="skill-item">
+            <img src="images/Adobe_xd.png" alt="Adobe XD" />
+            <p>Adobe XD</p>
+          </div>
+
+          <div class="skill-item">
+            <img src="images/Official_CSS_Logo.svg.png" alt="HTML CSS" />
+            <p>HTML / CSS</p>
+          </div>
+
+          <div class="skill-item">
+            <img src="images/Unofficial_JavaScript_logo_2.svg.png" alt="JavaScript" />
+            <p>JavaScript</p>
+          </div>
+
+          <div class="skill-item">
+            <img src="images/Adobe_Photoshop_CC_icon.svg.png" alt="Photoshop" />
+            <p>Photoshop</p>
+          </div>
+
+          <div class="skill-item">
+            <img src="images/Adobe_Illustrator_CC_icon.svg.png" alt="Illustrator" />
+            <p>Illustrator</p>
+          </div>
+        </div>
       </div>
 
-      <div class="experience">
-        <h2>Досвід</h2>
-        <p>
-          Створював навчальні проєкти, лендинги та дизайн-концепти для
-          веб-сайтів різної складності. Під час роботи над кожним проєктом я
-          приділяв увагу не лише візуальній частині, а й зручності використання
-          та логіці інтерфейсу. Постійно покращую свої навички, вивчаю сучасні
-          підходи до UI/UX дизайну та слідкую за новими тенденціями в
-          веб-індустрії. Мені важливо розвиватися, експериментувати з рішеннями
-          та створювати більш ефективні й продумані інтерфейси.
-        </p>
-      </div>
     </div>
     <footer>
       <p>© 2026 Портфоліо дизайнера</p>
     </footer>
   </body>
 </html>
+<script>
+  document.addEventListener("DOMContentLoaded", () => {
+    const hamburger = document.getElementById("hamburger");
+    const navMenu = document.getElementById("nav-menu");
+    const hero = document.querySelector(".about-hero");
+
+    if (hamburger && navMenu) {
+      hamburger.addEventListener("click", () => {
+        hamburger.classList.toggle("active");
+        navMenu.classList.toggle("active");
+        hero.classList.toggle("active");
+      });
+
+      // Закривати меню при кліку на посилання
+      document.querySelectorAll("nav a").forEach((link) => {
+        link.addEventListener("click", () => {
+          hamburger.classList.remove("active");
+          navMenu.classList.remove("active");
+          hero.classList.remove("active");
+        });
+      });
+
+      // Закривати при кліку на затемнення
+      hero.addEventListener("click", (e) => {
+        if (e.target === hero) {
+          hamburger.classList.remove("active");
+          navMenu.classList.remove("active");
+          hero.classList.remove("active");
+        }
+      });
+    }
+  });
+</script>

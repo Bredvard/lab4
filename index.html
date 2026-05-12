@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="normalize.css" />
     <link rel="stylesheet" href="css/styles.css" />
+    <link rel="icon" type="image/png" href="images/favicon.png" />
     <title>Портфоліо дизайнера</title>
     <meta
       name="description"
@@ -12,14 +13,31 @@
     />
   </head>
   <body>
-    <header>
-      <nav>
-        <a href="index.html">Головна</a>
-        <a href="projects.html">Портфоліо</a>
-        <a href="contact.html">Контакти</a>
-      </nav>
-      <h1>Портфоліо Олександра Добрєва</h1>
-      <p>Графічний дизайнер | UI/UX</p>
+    <header class="hero">
+      <div class="header-container">
+        <!-- Назва зліва -->
+        <div class="logo"></div>
+
+        <!-- Гамбургер меню (видно тільки на мобільних) -->
+        <div class="hamburger" id="hamburger">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+
+        <!-- Навігація -->
+        <nav id="nav-menu">
+          <a href="index.html">Головна</a>
+          <a href="projects.html">Портфоліо</a>
+          <a href="contact.html">Контакти</a>
+        </nav>
+      </div>
+
+      <div class="hero-content">
+        <h1>Олександр Добрєв</h1>
+        <p>UI/UX Designer & Web Designer</p>
+        <a href="#portfolio" class="hero-btn">Переглянути роботи</a>
+      </div>
     </header>
 
     <div class="about">
@@ -29,124 +47,192 @@
         веб-дизайні, брендингу та ілюстрації.
       </p>
     </div>
-    <div class="skills">
-      <h2 style="text-align: center">Мої навички</h2>
-      <ul>
-        <li>Figma / Adobe XD</li>
-        <li>UI/UX дизайн</li>
-        <li>Web-дизайн</li>
-        <li>Photoshop / Illustrator</li>
-      </ul>
-    </div>
-    <section id="portfolio">
-      <h2 style="text-align: center">Мої роботи</h2>
-      <div class="portfolio">
+
+    <section id="portfolio" class="portfolio-section">
+      <h2>Мої роботи</h2>
+
+      <div class="portfolio-grid">
         <div class="card">
-          <img src="images/image1.png" alt="Робота 1" />
-          <h3>Проєкт 1</h3>
-          <p>Опис дизайну</p>
+          <img src="images/image1.png" alt="Проєкт 1" />
+          <div class="card-info">
+            <h3>Проєкт 1</h3>
+            <p>UI/UX дизайн мобільного додатку</p>
+          </div>
         </div>
+
         <div class="card">
-          <img src="images/image2.png" alt="Робота 2" />
-          <h3>Проєкт 2</h3>
-          <p>Опис дизайну</p>
+          <img src="images/image2.png" alt="Проєкт 2" />
+          <div class="card-info">
+            <h3>Проєкт 2</h3>
+            <p>Редизайн сайту бренду</p>
+          </div>
         </div>
+
         <div class="card">
-          <img src="images/image3.png" alt="Робота 3" />
-          <h3>Проєкт 3</h3>
-          <p>Опис дизайну</p>
+          <img src="images/image3.png" alt="Проєкт 3" />
+          <div class="card-info">
+            <h3>Проєкт 3</h3>
+            <p>Landing page для продукту</p>
+          </div>
         </div>
+
         <div class="card">
-          <img src="images/image4.png" alt="Робота 1" />
-          <h3>Проєкт 4</h3>
-          <p>Опис дизайну</p>
+          <img src="images/image4.png" alt="Проєкт 4" />
+          <div class="card-info">
+            <h3>Проєкт 4</h3>
+            <p>Дизайн інтернет-магазину</p>
+          </div>
         </div>
+
         <div class="card">
-          <img src="images/image5.jpg" alt="Робота 2" />
-          <h3>Проєкт 5</h3>
-          <p>Опис дизайну</p>
+          <img src="images/image5.jpg" alt="Проєкт 5" />
+          <div class="card-info">
+            <h3>Проєкт 5</h3>
+            <p>UI концепт додатку</p>
+          </div>
         </div>
+
         <div class="card">
-          <img src="images/image6.jpg" alt="Робота 3" />
-          <h3>Проєкт 6</h3>
-          <p>Опис дизайну</p>
+          <img src="images/image6.jpg" alt="Проєкт 6" />
+          <div class="card-info">
+            <h3>Проєкт 6</h3>
+            <p>Брендинг та айдентика</p>
+          </div>
         </div>
+
         <div class="card">
-          <img src="images/image7.jpg" alt="Робота 1" />
-          <h3>Проєкт 7</h3>
-          <p>Опис дизайну</p>
+          <img src="images/image7.jpg" alt="Проєкт 7" />
+          <div class="card-info">
+            <h3>Проєкт 7</h3>
+            <p>Web дизайн сервісу</p>
+          </div>
         </div>
+
         <div class="card">
-          <img src="images/image8.jpg" alt="Робота 2" />
-          <h3>Проєкт 8</h3>
-          <p>Опис дизайну</p>
+          <img src="images/image8.jpg" alt="Проєкт 8" />
+          <div class="card-info">
+            <h3>Проєкт 8</h3>
+            <p>Дизайн лендингу</p>
+          </div>
         </div>
+
         <div class="card">
-          <img src="images/image9.jpg" alt="Робота 3" />
-          <h3>Проєкт 9</h3>
-          <p>Опис дизайну</p>
+          <img src="images/image9.jpg" alt="Проєкт 9" />
+          <div class="card-info">
+            <h3>Проєкт 9</h3>
+            <p>UI система компонентів</p>
+          </div>
         </div>
       </div>
     </section>
-    <div class="services">
-      <h2 style="text-align: center">Послуги</h2>
-      <div class="service">
-        <h3>Дизайн сайтів</h3>
-        <p>
-          Створення сучасних, адаптивних лендингів та веб-додатків з урахуванням
-          UX/UI принципів.
-        </p>
-      </div>
 
-      <div class="service">
-        <h3>UI/UX дизайн</h3>
-        <p>
-          Розробка зручних інтерфейсів, прототипів та користувацьких сценаріїв
-          для веб і мобільних продуктів.
-        </p>
-      </div>
+    <section class="services">
+      <h2>Послуги</h2>
 
-      <div class="service">
-        <h3>Брендинг</h3>
-        <p>
-          Створення унікального візуального стилю: логотипи, кольорові палітри
-          та фірмові елементи.
-        </p>
-      </div>
+      <div class="services-grid">
+        <div class="service">
+          <h3>Дизайн сайтів</h3>
+          <p>
+            Створення сучасних, адаптивних лендингів та веб-додатків з
+            урахуванням UX/UI принципів.
+          </p>
+        </div>
 
-      <div class="service">
-        <h3>Прототипування</h3>
-        <p>
-          Побудова інтерактивних прототипів у Figma для перевірки ідей до
-          розробки.
-        </p>
-      </div>
+        <div class="service">
+          <h3>UI/UX дизайн</h3>
+          <p>
+            Розробка зручних інтерфейсів, прототипів та користувацьких
+            сценаріїв.
+          </p>
+        </div>
 
-      <div class="service">
-        <h3>Адаптивний дизайн</h3>
-        <p>
-          Оптимізація інтерфейсів під різні пристрої: смартфони, планшети та
-          десктопи.
-        </p>
-      </div>
+        <div class="service">
+          <h3>Брендинг</h3>
+          <p>
+            Створення унікального візуального стилю: логотипи, кольори та
+            айдентика.
+          </p>
+        </div>
 
-      <div class="service">
-        <h3>Редизайн сайтів</h3>
-        <p>
-          Оновлення старих інтерфейсів із покращенням зручності та сучасного
-          вигляду.
-        </p>
+        <div class="service">
+          <h3>Прототипування</h3>
+          <p>
+            Інтерактивні прототипи у Figma для перевірки ідей перед розробкою.
+          </p>
+        </div>
+
+        <div class="service">
+          <h3>Адаптивний дизайн</h3>
+          <p>Оптимізація під смартфони, планшети та десктопи.</p>
+        </div>
+
+        <div class="service">
+          <h3>Редизайн сайтів</h3>
+          <p>Оновлення старих інтерфейсів із покращенням UX та стилю.</p>
+        </div>
+      </div>
+    </section>
+    <div class="reviews">
+      <h2>Відгуки</h2>
+
+      <div class="review">
+        <p>“Дуже сучасний дизайн та швидка робота!”</p>
+        <h4>— Іван</h4>
+      </div>
+      <div class="review">
+        <p>“Дуже сучасний дизайн та швидка робота!”</p>
+        <h4>— Іван</h4>
+      </div>
+      <div class="review">
+        <p>“Дуже сучасний дизайн та швидка робота!”</p>
+        <h4>— Іван</h4>
       </div>
     </div>
     <div class="contact">
-      <h2 style="text-align: center">Контакти</h2>
-      <p>Email: example@email.com</p>
-      <p>Instagram: @designer</p>
+      <h2>Контакти</h2>
+
+      <p>Email: <a href="mailto:example@email.com">example@email.com</a></p>
+      <p>Instagram: <a href="#">@designer</a></p>
+
       <button onclick="alert('Дякую за інтерес!')">Написати мені</button>
     </div>
 
     <footer>
-      <p>© 2026 Портфоліо дизайнера</p>
+      <div>
+        <p>© 2026 Портфоліо дизайнера</p>
+        <p>+380989523321</p>
+      </div>
     </footer>
   </body>
 </html>
+<script>
+  document.addEventListener("DOMContentLoaded", () => {
+    const hamburger = document.getElementById("hamburger");
+    const navMenu = document.getElementById("nav-menu");
+    const hero = document.querySelector(".hero");
+
+    hamburger.addEventListener("click", () => {
+      hamburger.classList.toggle("active");
+      navMenu.classList.toggle("active");
+      hero.classList.toggle("active"); // для затемнення
+    });
+
+    // Закривати меню при кліку на посилання
+    document.querySelectorAll("nav a").forEach((link) => {
+      link.addEventListener("click", () => {
+        hamburger.classList.remove("active");
+        navMenu.classList.remove("active");
+        hero.classList.remove("active");
+      });
+    });
+
+    // Закривати меню при кліку на затемнення
+    hero.addEventListener("click", (e) => {
+      if (e.target === hero) {
+        hamburger.classList.remove("active");
+        navMenu.classList.remove("active");
+        hero.classList.remove("active");
+      }
+    });
+  });
+</script>

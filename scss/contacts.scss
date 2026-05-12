@@ -2,18 +2,69 @@
   display: flex;
   gap: 40px;
   align-items: flex-start;
-  margin-bottom: 340px;
 }
 
 .contact-text {
-  max-width: 400px;
+  flex: 1;
+
+  padding: 40px;
+
+  background: rgba(255, 255, 255, 0.12);
+  backdrop-filter: blur(12px);
+
+  border-radius: 25px;
+
+  color: rgb(0, 0, 0);
+
+  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.25);
+
+  transition: 0.3s ease;
 }
 
+.contact-text:hover {
+  transform: translateY(-8px);
+}
+
+.contact-text h2 {
+  font-size: 32px;
+  margin-bottom: 20px;
+
+  color: #000000;
+}
+
+.contact-text p {
+  line-height: 1.8;
+  font-size: 17px;
+
+  opacity: 0.9;
+}
 form {
   flex: 1;
+
+  padding: 40px;
+
+  background: rgba(255, 255, 255, 0.15);
+  backdrop-filter: blur(12px);
+
+  border-radius: 25px;
+
   display: flex;
   flex-direction: column;
-  gap: 10px;
+  gap: 15px;
+
+  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.25);
+
+  transition: 0.3s ease;
+}
+
+form:hover {
+  transform: translateY(-8px);
+}
+
+form h2 {
+  font-size: 30px;
+  color: #000000;
+  margin-bottom: 10px;
 }
 .container {
   display: flex;
@@ -45,4 +96,551 @@ textarea {
 form {
   width: 100%;
   max-width: 800px;
+}
+/* контейнер */
+.bio {
+  max-width: 800px;
+  margin: 100px auto;
+  padding: 40px;
+
+  background: rgba(255, 255, 255, 0.12);
+  backdrop-filter: blur(12px);
+
+  border-radius: 25px;
+
+  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.2);
+
+  position: relative;
+
+  color: rgb(0, 0, 0);
+
+  transition: 0.3s ease;
+}
+
+/* hover */
+.bio:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 25px 60px rgba(0, 0, 0, 0.3);
+}
+
+/* декоративна лінія */
+.bio::before {
+  content: "";
+
+  position: absolute;
+
+  top: 0;
+  left: 0;
+
+  width: 100%;
+  height: 6px;
+
+  background: linear-gradient(90deg, #ffe711, #7ecd53, #245d48);
+
+  border-radius: 25px 25px 0 0;
+}
+
+/* заголовок */
+.bio h2 {
+  font-size: 32px;
+  margin-bottom: 15px;
+
+  color: #000000;
+}
+
+/* текст */
+.bio p {
+  font-size: 18px;
+  line-height: 1.8;
+
+  opacity: 0.95;
+}
+/* секція */
+.skills {
+  max-width: 1000px;
+  margin: 100px auto;
+  padding: 40px;
+
+  background: rgba(255, 255, 255, 0.12);
+  backdrop-filter: blur(12px);
+
+  border-radius: 25px;
+
+  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.2);
+
+  text-align: center;
+
+  color: rgb(0, 0, 0);
+}
+
+/* заголовок */
+.section-title {
+  font-size: 34px;
+  margin-bottom: 40px;
+
+  color: #000000;
+}
+
+/* grid */
+.skills-row {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+}
+
+/* skill card */
+.skill-item {
+  padding: 25px;
+
+  border-radius: 18px;
+
+  background: rgba(255, 255, 255, 0.08);
+
+  transition: 0.3s ease;
+
+  cursor: pointer;
+
+  position: relative;
+  overflow: hidden;
+}
+
+/* hover ефект */
+.skill-item:hover {
+  transform: translateY(-10px) scale(1.05);
+
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3);
+}
+
+/* glow смуга */
+.skill-item::before {
+  content: "";
+
+  position: absolute;
+
+  top: 0;
+  left: 0;
+
+  width: 100%;
+  height: 4px;
+
+  background: linear-gradient(90deg, #ffe711, #7ecd53, #245d48);
+}
+
+/* іконка */
+.skill-item img {
+  width: 70px;
+  height: 70px;
+
+  object-fit: contain;
+
+  margin-bottom: 10px;
+
+  transition: 0.3s ease;
+}
+
+/* hover на іконку */
+.skill-item:hover img {
+  transform: scale(1.15);
+}
+
+/* текст */
+.skill-item p {
+  font-size: 18px;
+  margin-top: 10px;
+
+  color: rgb(0, 0, 0);
+}
+.socials {
+  text-align: center;
+  margin: 80px 0;
+}
+
+.socials h3 {
+  font-size: 28px;
+  margin-bottom: 20px;
+}
+
+.socials a {
+  display: inline-block;
+
+  margin: 10px;
+  padding: 10px 20px;
+
+  background: rgba(255, 255, 255, 0.95);
+  border-radius: 20px;
+
+  color: rgb(0, 0, 0);
+
+  transition: 0.3s;
+}
+
+.socials a:hover {
+  transform: translateY(-5px);
+  background: #ffe711;
+  color: black;
+}
+.faq {
+  max-width: 800px;
+  margin: 0 auto 100px;
+}
+
+.faq h2 {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.faq-item {
+  background: rgba(255, 255, 255, 0.92);
+  backdrop-filter: blur(10px);
+
+  margin-bottom: 15px;
+  padding: 20px;
+
+  border-radius: 15px;
+
+  transition: 0.3s;
+}
+
+.faq-item:hover {
+  transform: translateY(-5px);
+}
+.contact-cards {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+
+  max-width: 1000px;
+  margin: 0 auto 80px;
+}
+
+.contact-cards .card {
+  background: rgba(255, 255, 255, 0.92);
+  backdrop-filter: blur(10px);
+
+  padding: 25px;
+  border-radius: 20px;
+
+  text-align: center;
+
+  transition: 0.3s;
+}
+
+.contact-cards .card:hover {
+  transform: translateY(-10px);
+}
+.contact-hero {
+  height: 70vh;
+  position: relative;
+  overflow: hidden;
+  color: white;
+
+  display: flex;
+  flex-direction: column;
+
+  background: linear-gradient(90deg, #00c6ff, #7b2ff7, #ff4ecd);
+  background-size: 400% 400%;
+  animation: gradientBG 10s ease infinite;
+}
+/* ===================== ПОВНИЙ АДАПТИВ ===================== */
+
+/* Планшет */
+@media (max-width: 1024px) {
+  .contact-wrapper {
+    flex-direction: column;
+    gap: 35px;
+  }
+
+  .contact-text,
+  form {
+    padding: 38px 30px;
+  }
+}
+
+/* ===================== МОБІЛЬНА ВЕРСІЯ (< 576px) ===================== */
+@media (max-width: 575px) {
+  html,
+  body {
+    overflow-x: hidden;
+    width: 100%;
+  }
+
+  * {
+    box-sizing: border-box;
+  }
+
+  .container {
+    max-width: 100%;
+    padding: 0 15px;
+    margin: 0 auto;
+  }
+
+  /* Основний блок з формою */
+  .contact-wrapper {
+    flex-direction: column;
+    gap: 25px;
+    margin: 30px 0 60px 0;
+    width: 100%;
+  }
+
+  .contact-text,
+  form {
+    width: 100%;
+    max-width: 100% !important;
+    padding: 28px 20px;
+    border-radius: 20px;
+  }
+
+  .contact-text h2,
+  form h2 {
+    font-size: 26px;
+  }
+
+  /* Поля форми */
+  input,
+  textarea {
+    width: 100% !important;
+    box-sizing: border-box;
+    padding: 15px 16px;
+    font-size: 16px;
+    border-radius: 12px;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    background: rgba(255, 255, 255, 0.9);
+  }
+
+  textarea {
+    min-height: 130px;
+    resize: vertical;
+  }
+
+  .contact-btn {
+    width: 100%;
+    padding: 16px;
+    font-size: 17px;
+    margin-top: 10px;
+  }
+
+  /* Інші секції */
+  .bio {
+    margin: 50px 15px;
+    padding: 30px 20px;
+  }
+
+  .skills {
+    margin: 50px 15px;
+    padding: 30px 20px;
+  }
+
+  .socials {
+    margin: 50px 15px;
+  }
+
+  .faq {
+    margin: 0 15px 70px;
+  }
+
+  .contact-cards {
+    margin: 0 15px 60px;
+    grid-template-columns: 1fr;
+    gap: 18px;
+  }
+
+  /* Hero */
+  .contact-hero {
+    height: 50vh;
+    min-height: 340px;
+  }
+
+  .contact-hero h1 {
+    font-size: 38px;
+  }
+}
+
+/* Дуже маленькі екрани */
+@media (max-width: 380px) {
+  .contact-text,
+  form {
+    padding: 25px 18px;
+  }
+}
+/* ===================== ФІКСОВАНИЙ ГАМБУРГЕР + МЕНЮ ===================== */
+
+.header-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+  position: relative;
+  z-index: 10;
+}
+
+.logo a {
+  color: white;
+  font-size: 24px;
+  font-weight: 700;
+  text-decoration: none;
+}
+
+.hamburger {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  z-index: 1001;
+  display: none;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 28px;
+  height: 22px;
+  cursor: pointer;
+}
+
+.hamburger span {
+  display: block;
+  width: 100%;
+  height: 3px;
+  background-color: white;
+  transition: 0.4s ease;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+}
+
+/* Мобільне меню */
+@media (max-width: 575px) {
+  .hamburger {
+    display: flex;
+  }
+
+  nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 66.66%;
+    max-width: 320px;
+    height: 100vh;
+    background: rgba(0, 0, 0, 0.97);
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 35px;
+    z-index: 1000;
+    transform: translateX(-100%);
+    transition: transform 0.45s ease;
+    padding: 80px 20px 40px;
+  }
+
+  nav.active {
+    transform: translateX(0);
+  }
+
+  nav a {
+    color: white;
+    font-size: 24px;
+  }
+
+  /* Затемнення */
+  .contact-hero::after {
+    content: "";
+    position: fixed;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.6);
+    z-index: 999;
+    opacity: 0;
+    visibility: hidden;
+    transition: 0.4s ease;
+  }
+
+  .contact-hero::after.active {
+    opacity: 1;
+    visibility: visible;
+  }
+}
+
+/* Десктоп */
+
+/* ===================== SMALL DEVICES (576px — 1023px) ===================== */
+@media (min-width: 576px) and (max-width: 1023px) {
+  body {
+    font-size: 20px;
+  }
+
+  .container {
+    padding: 0 30px;
+  }
+
+  /* Hero секції */
+  .contact-hero,
+  .about-hero {
+    height: 60vh;
+  }
+
+  .hero-content h1 {
+    font-size: 52px;
+  }
+
+  /* Форма контактів */
+  .contact-wrapper {
+    gap: 40px;
+  }
+
+  .contact-text,
+  form {
+    width: 100%;
+    max-width: 100%;
+    box-sizing: border-box;
+  }
+
+  .contact-btn {
+    width: 320px;
+    padding: 16px 40px;
+  }
+
+  /* Stats */
+  .stats {
+    gap: 30px;
+    margin: 80px auto;
+  }
+
+  .stat h3 {
+    font-size: 44px;
+  }
+
+  /* Timeline */
+  .timeline {
+    max-width: 700px;
+    margin: 90px auto;
+    gap: 35px;
+  }
+
+  .timeline-item {
+    width: 48%;
+    padding: 28px;
+  }
+
+  /* Contact Cards */
+  .contact-cards {
+    width: 80%;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 25px;
+  }
+
+  /* Socials */
+  .socials a {
+    padding: 12px 24px;
+    margin: 8px;
+  }
+
+  /* Загальні відступи секцій */
+  .bio,
+  .faq {
+    margin: 80px auto;
+    padding: 40px;
+  }
+
+  .faq-item {
+    padding: 24px;
+  }
+  footer {
+    position: static;
+    padding: 25px 15px;
+  }
 }

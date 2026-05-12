@@ -9,13 +9,31 @@
     <style></style>
   </head>
   <body>
-    <header>
-      <nav>
-        <a href="index.html">Головна</a>
-        <a href="projects.html">Портфоліо</a>
-        <a href="contact.html">Контакти</a>
-      </nav>
-      <h1>Контакти</h1>
+    <header class="contact-hero">
+      <div class="header-container">
+        <!-- Назва зліва -->
+        <div class="logo">
+          <a href="index.html"></a>
+        </div>
+
+        <!-- Гамбургер -->
+        <div class="hamburger" id="hamburger">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+
+        <!-- Меню -->
+        <nav id="nav-menu">
+          <a href="index.html">Головна</a>
+          <a href="projects.html">Портфоліо</a>
+          <a href="contact.html">Контакти</a>
+        </nav>
+      </div>
+
+      <div class="hero-content">
+        <h1>Контакти</h1>
+      </div>
     </header>
 
     <div class="container">
@@ -40,11 +58,57 @@
           "
         >
           <h2>Зв'язатися зі мною</h2>
-          <input type="text" placeholder="Ваше ім'я" required />
-          <input type="email" placeholder="Email" required />
-          <textarea rows="5" placeholder="Ваше повідомлення"></textarea>
+          <input
+            type="text"
+            class="form-input"
+            placeholder="Ваше ім'я"
+            required
+          />
+          <input type="email" class="form-input" placeholder="Email" required />
+          <textarea
+            class="form-input"
+            rows="5"
+            placeholder="Ваше повідомлення"
+          ></textarea>
           <button type="submit" class="contact-btn">Відправити</button>
         </form>
+      </div>
+    </div>
+    <div class="socials">
+      <h3>Соцмережі</h3>
+
+      <a href="#">Instagram</a>
+      <a href="#">Behance</a>
+      <a href="#">Dribbble</a>
+      <a href="#">Telegram</a>
+    </div>
+    <div class="contact-cards">
+      <div class="card">
+        <h3>Email</h3>
+        <p>example@email.com</p>
+      </div>
+
+      <div class="card">
+        <h3>Телефон</h3>
+        <p>+380 98 952 33 21</p>
+      </div>
+
+      <div class="card">
+        <h3>Локація</h3>
+        <p>Україна</p>
+      </div>
+    </div>
+    <div class="faq">
+      <h2>Часті питання</h2>
+
+      <div class="faq-item">
+        <h4>Скільки коштує дизайн?</h4>
+        <p>Залежить від складності проєкту.</p>
+      </div>
+
+      <div class="faq-item">
+        <h4>Чи працюєш з фрілансом?</h4>
+        <p>Так, відкритий до проєктів.</p>
       </div>
     </div>
 
@@ -53,3 +117,36 @@
     </footer>
   </body>
 </html>
+<script>
+  document.addEventListener("DOMContentLoaded", () => {
+    const hamburger = document.getElementById("hamburger");
+    const navMenu = document.getElementById("nav-menu");
+    const header = document.querySelector(".contact-hero");
+
+    if (hamburger && navMenu) {
+      hamburger.addEventListener("click", () => {
+        hamburger.classList.toggle("active");
+        navMenu.classList.toggle("active");
+        header.classList.toggle("active"); // для затемнення
+      });
+
+      // Закривати меню при кліку на посилання
+      document.querySelectorAll("nav a").forEach((link) => {
+        link.addEventListener("click", () => {
+          hamburger.classList.remove("active");
+          navMenu.classList.remove("active");
+          header.classList.remove("active");
+        });
+      });
+
+      // Закривати при кліку на затемнення
+      header.addEventListener("click", (e) => {
+        if (e.target === header) {
+          hamburger.classList.remove("active");
+          navMenu.classList.remove("active");
+          header.classList.remove("active");
+        }
+      });
+    }
+  });
+</script>
